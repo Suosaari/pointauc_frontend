@@ -39,7 +39,7 @@
   },
   "metadata": {
     "/": {
-      "title": "Pointauc | Аукцион для стримеров в реальном времени",
+      "title": "Великий Аук | Аукцион фильмов таверны МО",
       "description": "Проводите интерактивные аукционы, где зрители могут делать ставки на игры, видео и многое другое, используя баллы Twitch или донаты."
     },
     "/settings": {
@@ -47,7 +47,7 @@
       "description": "Настройте параметры аукциона и интеграции с Twitch, Donation Alerts и DonatePay. Персонализируйте аукцион с помощью автоматизации таймера, изменения внешнего вида и альтернативных типов аукциона."
     },
     "/wheel": {
-      "title": "Великий Аук | Определите победителей с помощью вращения колеса",
+      "title": "Великий Аук | Определите какую залупу будете смотреть сегодня",
       "description": "Используйте колесо случайного выбора для определения победителей аукциона с помощью увлекательного вращения. Выбирайте из различных типов колес, чтобы добавить интриги и азарта в ваши живые аукционы."
     },
     "/statistic": {
@@ -108,7 +108,7 @@
         "title": "Заказы зрителей"
       },
       "wheel": {
-        "title": "Колесо рандома"
+        "title": "Великое колесо"
       },
       "logout": {
         "title": "Выйти с Аккаунта"
@@ -126,7 +126,7 @@
     "max": "макс",
     "left": "Осталось",
     "delete": "Удалить",
-    "currencySign": "ДЕПАЙ ТВАРЬ",
+    "currencySign": "ДЕПАЙ",
     "moveFileOrClick": "Перетащите сюда файл или нажмите",
     "insertImageLink": "Вставьте ссылку на изображение...",
     "incorrectLink": "Неверная ссылка",
@@ -161,7 +161,7 @@
   "auc": {
     "defaultRules": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":\"center\",\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Образец\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"center\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"textStyle\",\"attrs\":{\"color\":\"#ffc657\"}}],\"text\":\"Нажмите на данную область чтобы начать редактировать правила.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":\"center\",\"level\":2},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":\"24\"}}],\"text\":\"Возможности редактора\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"left\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":\"16\"}}],\"text\":\"У вас есть множество функций, чтобы сделать вид правил именно таким, как вы хотите:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"attrs\":{\"color\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"left\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}},{\"type\":\"bold\"}],\"text\":\"Различное\"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}},{\"type\":\"italic\"}],\"text\":\"форматирование\"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"underline\"},{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\"текста\"}]}]},{\"type\":\"listItem\",\"attrs\":{\"color\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"left\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\"Изменение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":\"30\"}}],\"text\":\"размера\"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\" шрифта\"}]}]},{\"type\":\"listItem\",\"attrs\":{\"color\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"left\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\"Цвет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}},{\"type\":\"textStyle\",\"attrs\":{\"color\":\"#f8e71c\"}}],\"text\":\"текста\"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":\"#d14844\",\"fontSize\":null}}],\"text\":\"его фон\"}]}]},{\"type\":\"listItem\",\"attrs\":{\"color\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"right\"},\"content\":[{\"type\":\"text\",\"text\":\"Направление текста\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1},\"content\":[{\"type\":\"listItem\",\"attrs\":{\"color\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"left\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"highlight\",\"attrs\":{\"color\":null,\"fontSize\":null}}],\"text\":\"Разные виды списков и заголовков\"}]}]}]}]}",
     "showRules": "Показать правила аукциона",
-    "addPosition": "Добавить лот",
+    "addPosition": "Добавить фильм",
     "saveLoad": "Сохранение/загрузка",
     "chanceTooltip": "Текст округлен до 2 знаков после запятой, но шансы на победу в колесе рассчитываются исходя из реальной стоимости.",
     "downloadMarbles": "Скачать шары",
@@ -173,8 +173,8 @@
     "clearAll": "Очистить все",
     "saves": "Ваши сохранения",
     "sendBugReport": "Сообщить об ошибке",
-    "lotSearch": "Поиск среди хуиты...",
-    "newLotName": "Название новой хуйни",
+    "lotSearch": "Поиск среди фильмов...",
+    "newLotName": "Название фильма",
     "lotName": "Название",
     "integrations": "Интеграции",
     "addToRandomSlot": "Добавить к случайному слоту",
@@ -182,7 +182,7 @@
     "total": "Всего: {{totalSum}} ₽",
     "optimizationEnabled": "Анимации лотов отключены для повышения производительности (кол-во лотов > 100)",
     "casino": {
-      "selectLot": "Колесо удачи",
+      "selectLot": "Колесо хуйни",
       "description": "Вам предстоит прокрутить обычное колесо, если выбранный вами лот победит, то ставка умножится не заданное число, иначе обнулится.",
       "warning": "Эта функция не дает выгоду или убыток для донатера!",
       "yourLot": "Ваш лот:",
@@ -318,8 +318,8 @@
     }
   },
   "wheel": {
-    "hideInactive": "Скрыть выбывшие лоты",
-    "totalItems": "Участников в колесе - {{amount}}",
+    "hideInactive": "Скрыть лошков",
+    "totalItems": "Участников в ауке - {{amount}}",
     "typeParticipants": "Или введите участников вручную",
     "import": {
       "title": "Импорт участников",
@@ -354,10 +354,10 @@
       "new": "Новое",
       "classic": "Классическое"
     },
-    "wheel": "Колесо",
-    "spin": "Крутить",
+    "wheel": "Великий аук",
+    "spin": "ПОКА",
     "nextDuel": "следующая дуэль",
-    "spinning": "Крутимся...",
+    "spinning": "Кручу хуйню...",
     "duration": "Длительность",
     "howItWorks": "Как это работает?",
     "nesting": "Вложенность",

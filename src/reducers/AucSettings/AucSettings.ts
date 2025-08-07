@@ -49,7 +49,7 @@ const defaultSettings: AucSettingsState['settings'] = {
   marblesAuc: false,
   marbleRate: 50,
   marbleCategory: 100,
-  showChances: false,
+  showChances: true,
   maxTime: 15,
   minTime: 2,
   isMinTimeActive: false,

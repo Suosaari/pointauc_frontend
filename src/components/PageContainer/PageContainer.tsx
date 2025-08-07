@@ -25,7 +25,12 @@ const PageContainer: FC<PgeContainerProps> = ({ title, children, className, ...p
   // const classes = useStyles();
 
   return (
-    <Container className={classNames(className, 'page-container')} style={{ maxWidth: '95%' }} {...props}>
+    <Container
+      disableGutters
+      className={classNames(className, 'page-container')}
+      style={{ maxWidth: '95vw', width: '100%' }}
+      {...props}
+    >
       {!!title && (
         <Typography color='textPrimary' variant='h3'>
           {title}

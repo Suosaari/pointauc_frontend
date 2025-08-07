@@ -8,6 +8,8 @@
   padding-bottom: 0 !important;
   position: relative;
   flex-grow: 1;
+  overflow-x: hidden; // disable horizontal scrolling on wheel page
+  overflow-y: hidden;
 
   &.padding {
     padding-left: 40px !important;
@@ -19,9 +21,10 @@
   display: flex;
   position: relative;
   flex-grow: 1;
-  overflow-y: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden; // ensure no horizontal scroll inside wheel content
   width: 100%;
-  gap: 56px;
+    gap: 32px; // reduce gap to avoid overflow near controls
 
   .description-link {
     background-color: transparent;
@@ -47,6 +50,7 @@
     flex-grow: 12;
     flex-basis: 0;
     max-width: 550px;
+    min-width: 400px; // prevent shrinking too narrow causing horizontal overflow
     height: 100%;
 
     &.shrink {

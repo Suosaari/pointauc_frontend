@@ -31,14 +31,8 @@ const useWheelResolver = ({ format, dropoutVariant, controller }: Props): Wheel.
       }
     }
 
-    switch (format) {
-      case WheelFormat.Default:
-        return normalWheel;
-      case WheelFormat.BattleRoyal:
-        return battleRoyal;
-      default:
-        return normalWheel;
-    }
+    // Hide BattleRoyal mode: fallback to normal wheel for any non-supported format
+    return normalWheel;
   }, [format, dropoutVariant, runtimeDropout, simulationDropout, normalWheel, battleRoyal]);
 };
 

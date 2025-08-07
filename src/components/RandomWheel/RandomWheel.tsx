@@ -25,6 +25,7 @@ import useWheelResolver from '@components/RandomWheel/hooks/useWheelResolver.ts'
 import wheelUtils from '@components/RandomWheel/wheelUtils.ts';
 import array from '@utils/dataType/array.ts';
 import ItemsPreview from '@components/RandomWheel/ItemsPreview';
+import ImageOverlay from '@components/RandomWheel/ImageOverlay/ImageOverlay';
 import './RandomWheel.scss';
 
 export interface SettingElements {
@@ -182,6 +183,7 @@ const RandomWheel = <TWheelItem extends WheelItem = WheelItem>({
   return (
     <WheelContextProvider controller={wheelController} changeInitialItems={setItemsFromProps}>
       <form className='wheel-content' onSubmit={handleSubmit(onSpinClick)}>
+        <ImageOverlay />
         {!content && elements.preview && <ItemsPreview allItems={filteredItems} activeItems={items} />}
         {content && <div className='wheel-content-negative-space' />}
         <WheelComponent

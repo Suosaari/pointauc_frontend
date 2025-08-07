@@ -1,0 +1,79 @@
+.wheel-image-overlay-root {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; // allow underlying wheel interactions; we enable on our elements
+}
+
+.wheel-image-overlay-file-input {
+  display: none;
+}
+
+.wheel-image-overlay-add,
+.wheel-image-overlay-show {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 20;
+  pointer-events: auto;
+  background: #2b2b2b;
+  color: #eee;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.wheel-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  z-index: 15;
+  pointer-events: auto; // capture to drag
+  user-select: none;
+}
+
+.wheel-image-overlay-img {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.wheel-image-overlay-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 6px;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wheel-image-overlay-toolbar .btn {
+  background: #3a3a3a;
+  color: #f0f0f0;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.wheel-image-overlay-toolbar .btn.danger {
+  background: #6b2b2b;
+  border-color: #7a3333;
+}
+
+.wheel-image-overlay-toolbar .size {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ddd;
+  font-size: 12px;
+}
+
+
+

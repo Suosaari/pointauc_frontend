@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Controller } from 'react-hook-form';
+import { Controller, useFormContext, useWatch } from 'react-hook-form';
 
 import RadioButtonGroup, { Option } from '@components/RadioButtonGroup/RadioButtonGroup.tsx';
 import { WheelFormat } from '@constants/wheel.ts';
@@ -13,10 +13,20 @@ const WheelFormatField = () => {
     () => [
       { key: WheelFormat.Default, label: t('wheel.format.normal') },
       { key: WheelFormat.Dropout, label: t('wheel.format.dropout') },
-      { key: WheelFormat.BattleRoyal, label: t('wheel.format.battleRoyal') },
+      // BattleRoyal hidden per request
     ],
     [t],
   );
+
+  // Ensure saved/legacy value like BattleRoyal is coerced to Default
+  const { setValue } = useFormContext<Wheel.Settings>();
+  const currentFormat = useWatch<Wheel.Settings>({ name: 'format' });
+  useEffect(() => {
+    const allowed = new Set(wheelOptions.map((o) => o.key));
+    if (!allowed.has(currentFormat)) {
+      setValue('format', WheelFormat.Default, { shouldDirty: true, shouldTouch: true, shouldValidate: true });
+    }
+  }, [currentFormat, setValue, wheelOptions]);
 
   return (
     <Controller
